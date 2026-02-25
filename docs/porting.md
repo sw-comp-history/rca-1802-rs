@@ -327,6 +327,6 @@ asm-game-common/
 | Demo | Status | Live Demo |
 |------|--------|-----------|
 | IBM 1130 | Complete | https://sw-comp-history.github.io/ibm-1130-rs/ |
-| RCA 1802 | In Progress | - |
+| RCA 1802 | Complete | https://sw-comp-history.github.io/rca-1802-rs/ |
 | IBM 390 | Not Started | - |
 | RISC-V | Not Started | - |
