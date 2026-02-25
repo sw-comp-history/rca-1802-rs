@@ -4,12 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RCA COSMAC 1802 Assembly Game</title>
-    <link data-trunk rel="copy-file" href="favicon.ico">
+    
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link data-trunk rel="css" href="styles/asm-game.css">
-    <link data-trunk rel="css" href="styles/layout.css">
-    <link data-trunk rel="rust" href="Cargo.toml" data-wasm-opt="z" />
-</head>
+    <link rel="stylesheet" href="/rca-1802-rs/asm-game-1ace3a9bd74b542d.css" integrity="sha384-7K0aCBnj58qA1IGzUhr1rCvMkq4rali4/zCyGwNMq+P14/f2y8Tmvd7jkfCVH2og"/>
+    <link rel="stylesheet" href="/rca-1802-rs/layout-9701e985fa61af3b.css" integrity="sha384-87hzM49LEZkyserVuSFNI6RAAnqOddqRFy7ci/UGlk4z7dZaGE9S8UOAIBxwN3R4"/>
+    
+<script type="module">
+import init, * as bindings from '/rca-1802-rs/rca-1802-emulator-74e138fc926d8c90.js';
+const wasm = await init({ module_or_path: '/rca-1802-rs/rca-1802-emulator-74e138fc926d8c90_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script>
+<link rel="modulepreload" href="/rca-1802-rs/rca-1802-emulator-74e138fc926d8c90.js" crossorigin="anonymous" integrity="sha384-HbGAzLHYGZ1On1KaXzdGOvU26SUi43xCj6xwiPMP7TnlyKoaESjbDqdKrBLsip6R"><link rel="preload" href="/rca-1802-rs/rca-1802-emulator-74e138fc926d8c90_bg.wasm" crossorigin="anonymous" integrity="sha384-vBSXXF2NmbQUL1wmBYUwl78xYsF7ROmyYPzJhslrognYr2KwO6qsj9RMUU3WE8gy" as="fetch" type="application/wasm"></head>
 <body>
 </body>
 </html>
