@@ -6,7 +6,7 @@ An interactive browser-based educational game for learning the RCA COSMAC 1802 i
 
 **[Try it online](https://sw-comp-history.github.io/rca-1802-rs/)**
 
-![RCA 1802 Emulator Screenshot](images/screenshot.png?ts=1772044000000)
+![RCA 1802 Emulator Screenshot](images/screenshot.png?ts=1772044849000)
 
 ## Features
 
