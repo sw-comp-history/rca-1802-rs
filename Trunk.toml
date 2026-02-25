@@ -1,0 +1,11 @@
+[build]
+dist = "pages"
+release = true
+public_url = "/rca-1802-rs/"
+
+[serve]
+address = "0.0.0.0"
+port = 5555
+
+[watch]
+watch = ["src", "index.html", "styles"]
