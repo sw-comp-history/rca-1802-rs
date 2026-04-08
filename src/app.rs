@@ -1,5 +1,5 @@
 use crate::assembler::assemble;
-use crate::cpu::{Cpu, Instruction, execute_instruction};
+use crate::cpu::{execute_instruction, Cpu, Instruction};
 use components::{
     Header, LegendItem, MemoryViewer, Modal, ProgramArea, Register, RegisterPanel, Sidebar,
     SidebarButton,
@@ -768,6 +768,9 @@ pub fn app() -> Html {
                 <div class="footer-left">
                     <span>{"MIT License"}</span>
                     <span>{"© 2026 Michael A Wright"}</span>
+                    <a href="https://software-wrighter-lab.github.io/" target="_blank">{"Blog"}</a>
+                    <a href="https://discord.com/invite/Ctzk5uHggZ" target="_blank">{"Discord"}</a>
+                    <a href="https://www.youtube.com/@SoftwareWrighter" target="_blank">{"YouTube"}</a>
                 </div>
                 <div class="footer-right">
                     <span>{format!("{} | {} | {}", env!("VERGEN_BUILD_HOST"), env!("VERGEN_GIT_SHA_SHORT"), env!("VERGEN_BUILD_TIMESTAMP"))}</span>
